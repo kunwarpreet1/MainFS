@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/styleSheets/Login-page.css">
+</head>
+<body>
+  <div class="main">
+    <header class="Header">
+      <div class="logo">Food Share</div>
+      <blockquote>'No one has ever become poor from giving. – Anne Frank.'</blockquote>
+      <nav class="nav">
+        <div class="list">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/profile">PROFILE</a></li>
+            <li><a href="/ngos">NGOs</a></li>
+            <li><a href="/banquets">BANQUETS</a></li>
+            <li><a href="/aboutus">ABOUT US</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="loginmain">
+      <div class="login-1">
+        <div class="login-2">
+          <h2>Login In</h2>
+        </div>
+        <form id="loginForm" onsubmit="event.preventDefault(); Login();">
+          <div class="login-3">
+            <div class="login-title">
+              <h4>Email Address :</h4>
+            </div>
+            <input
+              type="email"
+              placeholder="Email address"
+              class="input"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="login-3">
+            <div class="login-title">
+              <h4>Password :</h4>
+            </div>
+            <input
+              type="password"
+              placeholder="Password"
+              class="input"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <p id="message"></p>
+          <div class="login-4">
+            <button type="submit" id="login">Log In</button>
+          </div>
+        </form>
+        <div class="login-5">
+          <h4 id="forgetpassword" onclick="forgotPassword()">Forget Password</h4>
+        </div>
+        <div class="login-6">
+          <p style="color:black;">
+            Don't have an account?
+            <span id="signup" onclick="register()">Sign Up</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p>Email: Info@example.com</p>
+          <p>Phone: +1234567890</p>
+          <p>Address: XYZ Street name, country</p>
+        </div>
+        <div class="footer-content">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Us</h3>
+          <ul class="social-icons">
+            <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy; 2024 FOODSHARE. All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+  <script src="/javaScripts/Login-page.js"></script>
+</body>
+</html>

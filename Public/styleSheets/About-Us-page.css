@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color:white;
+  }
+  
+  
+  .Header{
+  margin:0px;
+  padding:3px;
+  }
+  header{
+  height: auto;
+  width: auto;  
+  background-color:#76323F;
+  color:lightgrey;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  }
+  .main{
+  margin:0;
+  padding:0;
+  height:100%;
+  }
+  nav{
+  font-family: "Segoe UI";
+  margin:0px;
+  }
+  .list ul{
+  size: 10px;
+  display: flex;
+  gap:20px;
+  }
+  .list ul li{
+  
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  cursor:pointer;
+  
+  }
+  a:link { 
+  text-decoration: none; 
+  } 
+  a:visited { 
+  text-decoration: none; 
+  } 
+  a:hover { 
+  text-decoration: none; 
+  } 
+  a:active { 
+  text-decoration: none; 
+  }
+  
+  .logo{
+  font-weight: bold;
+  font-size: 30px
+  }
+  
+  .container {
+  padding: 2px 16px;
+  }
+  
+  img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 70vh;
+  background-size: 100% 100%;
+  
+  }
+  .carousel {
+  position: relative;
+  width: 100%;
+  
+  /* padding: 30px; */
+  max-width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px 0; /* Add padding to the top and bottom */
+  }
+  
+  .carousel-slides {
+  display: flex;
+  transition: transform 0.3s ease;
+  }
+  
+  .carousel-slide {
+  min-width: 100%;
+  
+  }
+  
+  .carousel-slide img {
+  width: 100%;
+  height: 50vh;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  }
+  
+  .prev, .next {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius:4px;
+  cursor: pointer;
+  padding: 16px;
+  margin-top: -22px;
+  z-index: 100;
+  }
+  
+  .prev {
+  left: 2;
+  }
+  
+  .next {
+  right: 2;
+  }
+  
+  
+  html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  body {
+  flex: 1;
+  }
+  
+  .section{
+  display: flex;
+  flex-direction:column;
+  }
+  
+  #para{
+  font-family: "Serif";
+  width:50%;
+  align-items: right;
+  font-size: 20px;
+  color:black;
+  }
+  
+  /* Footer css */
+  footer {
+  background-color:#76323F;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow issues */
+  
+  }
+  
+  .container {
+  width: 90%;
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Margin to separate from bottom-bar */
+  }
+  
+  .footer-content {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+  }
+  
+  h3 {
+  font-size: 22px; /* Adjust font size for readability */
+  margin-bottom: 10px;
+  }
+  
+  
+  .footer-content p {
+  margin: 5px 0;
+  }
+  
+  .footer-content ul {
+  padding: 0;
+  margin: 0;
+  }
+  
+  .list {
+  padding: 0;
+  margin: 0;
+  }
+  
+  .list li {
+  position: relative;
+  padding: 7px;
+  text-align: center;
+  display: inline-block;
+  }
+  
+  .list li::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f18930;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  }
+  
+  .list li:hover::before {
+  width: 70px;
+  }
+  
+  .social-icons {
+  padding: 0;
+  text-align: center;
+  margin: 10px 0; /* Space above and below the icons */
+  }
+  
+  .social-icons li {
+  display: inline-block;
+  padding: 0 10px; /* Space between icons */
+  }
+  
+  .social-icons i {
+  color: white;
+  font-size: 24px; /* Optimal size for footer icons */
+  transition: color 0.2s ease;
+  }
+  
+  .social-icons a {
+  text-decoration: none;
+  }
+  
+  .social-icons i:hover {
+  color: #f18930;
+  }
+  
+  .bottom-bar {
+  background: #343434;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%; /* Ensure it spans the full width */
+  }
+  
+  .bottom-bar p {
+  color: lightgrey;
+  margin: 0;
+  font-size: 14px; /* Adjusted font size */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+  .footer-content {
+  flex: 1 1 100%;
+  margin: 5px 0;
+  }
+  
+  .social-icons li {
+  padding: 0 5px; /* Less space between icons on smaller screens */
+  }
+  
+  .social-icons i {
+  font-size: 20px; /* Slightly smaller icons on smaller screens */
+  }
+  }
+  

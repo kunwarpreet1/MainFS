@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home Page</title>
+   <link rel="stylesheet" type="text/css" href="/styleSheets/Register-page.css">
+  </head>
+  <body>
+    <div class= "main">
+    <header class="Header">
+          <div class="logo">Food Share</div>
+       <blockquote>'No one has ever become poor from giving. – Anne Frank.'</blockquote>
+      <nav class="nav">
+          <div class="list">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/profile">PROFILE</a></li>
+            <li><a href="/ngos">NGOs</a></li>
+            <li><a href="/banquets">BANQUETS</a></li>
+            <li><a href="/aboutus">ABOUT US</a></li>
+          </ul>
+          </div>
+      </nav>
+    </header>
+        <div class="registermain">
+          <div class="register-1">
+            <div class="register-2">
+              <h2>Sign Up</h2>
+            </div>
+            <div class="register-3">
+              <div class="register-title">
+                <h4>First Name :</h4>
+              </div>
+              <input
+                type="text"
+                placeholder="First Name"
+                class="input"
+                name="firstname"
+                id="firstname"
+              />
+            </div>
+            <div class="register-3">
+              <div class="register-title">
+                <h4>Last Name :</h4>
+              </div>
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="input"
+                name="lastname"
+                id="lastname"
+              />
+            </div>
+            <div class="register-3">
+              <div class="register-title">
+                <h4>Email :</h4>
+              </div>
+              <input
+                type="email"
+                placeholder="abc@xyz.com"
+                class="input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="register-3">
+              <div class="register-title">
+                <h4>Phone Number :</h4>
+              </div>
+              <input
+                type="tel"
+                placeholder="0123456789"
+                class="input"
+                name="phoneNumber"
+                id="phoneNumber"
+              />
+            </div>
+            <div class="register-3">
+              <div class="register-title">
+                <h4>Password :</h4>
+              </div>
+              <input
+                type="password"
+                placeholder="Password"
+                class="input"
+                name="password"
+                id="password"
+              />
+            </div>
+            <div class="register-3">
+              <div class="register-title">
+                <h4>Confirm Password :</h4>
+              </div>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                class="input"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+            <p id="message"></p>
+            <div class="register-4">
+              <button id="signup" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="register-5">
+              <p style="color:black;">
+                Already have an Account?
+                <span id="login" onclick="login()">Log In</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      <footer>
+          <div class="container">
+              <div class="footer-content">
+                  <h3>Contact Us</h3>
+                  <p>Email: Info@example.com</p>
+                  <p>Phone: +1234567890</p>
+                  <p>Address: XYZ Street name, country</p>
+              </div>
+              <div class="footer-content">
+                  <h3>Quick Links</h3>
+                  <ul class="list">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="footer-content">
+                  <h3>Follow Us</h3>
+                  <ul class="social-icons">
+                      <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+                      <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="bottom-bar">
+              <p>&copy; 2024 FOODSHARE. All rights reserved</p>
+          </div>
+      </footer>
+
+    </div>
+    </body>
+    <script type="text/javascript" src="/javaScripts/Register-page.js"></script>
+    </html>

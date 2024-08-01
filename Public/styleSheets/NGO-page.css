@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+  }
+  
+  .Header{
+  margin:0px;
+  padding:3px;
+  }
+  header{
+  height: auto;
+  width: auto;  
+  background-color:#76323F;
+  color:lightgrey;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  }
+  .main{
+  margin:0;
+  padding:0;
+  height:100%;
+  }
+  nav{
+  font-family: "Segoe UI";
+  margin:0px;
+  }
+  .list ul{
+  size: 10px;
+  display: flex;
+  gap:20px;
+  }
+  .list ul li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  cursor:pointer;
+  }
+  a:link { 
+  text-decoration: none; 
+  } 
+  a:visited { 
+  text-decoration: none; 
+  } 
+  a:hover { 
+  text-decoration: none; 
+  } 
+  a:active { 
+  text-decoration: none; 
+  }
+  
+  .logo{
+  font-weight: bold;
+  font-size: 30px
+  }
+  
+  .container {
+  padding: 2px 16px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;    /* Center cards horizontally */
+    width: 100%;            /* Ensure the container takes full width */
+    padding: 20px;          /* Add padding around the container */
+    box-sizing: border-box;
+  }
+  
+  .card {
+    display: flex;          /* Use flexbox for layout */
+    align-items: flex-start; /* Align items to the start of the card */
+    width: 100%;            /* Make each card take full width of the container */
+    max-width: 1200px;      /* Set a maximum width for larger screens */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2); /* Soft shadow for depth */
+    margin-bottom: 20px;    /* Space between cards */
+    padding: 16px;          /* Padding inside the card */
+  }
+  
+  .card img {
+    width: 150px;           /* Set a fixed width for the image */
+    height: auto;           /* Maintain aspect ratio */
+    margin-right: 16px;     /* Space between image and text */
+  
+  }
+  
+  .card-content {
+    flex: 1;                /* Take up remaining space */
+  }
+  
+  .card-content h3 {
+    font-size: 24px;        /* Font size for heading */
+    margin-bottom: 8px;
+  }
+  
+  .card-content p {
+    color: #666;            /* Dark gray color for text */
+    font-size: 14px;        /* Font size for paragraph */
+    line-height: 1.5;       /* Line height for readability */
+  }
+  
+  .card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333; /* Dark background for button */
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;            /* White text color for button */
+  }
+  
+  footer {
+  background-color:#76323F;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow issues */
+  
+  }
+  
+  .container {
+  width: 90%;
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Margin to separate from bottom-bar */
+  }
+  
+  .footer-content {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+  }
+  
+  h3 {
+  font-size: 22px; /* Adjust font size for readability */
+  margin-bottom: 10px;
+  }
+  
+  
+  .footer-content p {
+  margin: 5px 0;
+  }
+  
+  .footer-content ul {
+  padding: 0;
+  margin: 0;
+  }
+  
+  .list {
+  padding: 0;
+  margin: 0;
+  }
+  
+  .list li {
+  position: relative;
+  padding: 7px;
+  text-align: center;
+  display: inline-block;
+  }
+  
+  .list li::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f18930;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  }
+  
+  .list li:hover::before {
+  width: 70px;
+  }
+  
+  .social-icons {
+  padding: 0;
+  text-align: center;
+  margin: 10px 0; /* Space above and below the icons */
+  }
+  
+  .social-icons li {
+  display: inline-block;
+  padding: 0 10px; /* Space between icons */
+  }
+  
+  .social-icons i {
+  color: white;
+  font-size: 24px; /* Optimal size for footer icons */
+  transition: color 0.2s ease;
+  }
+  
+  .social-icons a {
+  text-decoration: none;
+  }
+  
+  .social-icons i:hover {
+  color: #f18930;
+  }
+  
+  .bottom-bar {
+  background: #343434;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%; /* Ensure it spans the full width */
+  }
+  
+  .bottom-bar p {
+  color: lightgrey;
+  margin: 0;
+  font-size: 14px; /* Adjusted font size */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+  .footer-content {
+  flex: 1 1 100%;
+  margin: 5px 0;
+  }
+  
+  .social-icons li {
+  padding: 0 5px; /* Less space between icons on smaller screens */
+  }
+  
+  .social-icons i {
+  font-size: 20px; /* Slightly smaller icons on smaller screens */
+  }
+  }
+  
